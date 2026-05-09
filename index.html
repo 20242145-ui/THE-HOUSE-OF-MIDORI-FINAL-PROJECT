@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Pacifico&family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>House of Midori</title>
+</head>
+
+<body class="home">
+
+  <header>
+    <nav class="navbar has-search">
+      <div class="nav-logo">
+        <img src="images/logo2.png" alt="House of Midori Logo">
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">HOME</a></li>
+        <li><a href="RECIPE.html">RECIPE</a></li>
+        <li><a href="DRINKSnSNACKS.html">DRINKS & SNACKS</a></li>
+        <li><a href="ABOUT.html">ABOUT</a></li>
+        <li><a href="CONTACT.html">CONTACT</a></li>
+      </ul>
+
+      <section class="navbar-search">
+        <input type="text" id="homeSearch" placeholder="Search recipes..." aria-label="Search recipes">
+        <section class="home-search-results" id="searchResults"></section>
+      </section>
+    </nav>
+  </header>
+
+  <div class="mobile-search-toggle">
+    <img src="images/search.png" alt="Search">
+  </div>
+
+  <div class="mobile-search-bar">
+    <input type="text" id="mobileHomeSearch" placeholder="Search recipes...">
+    <section class="home-search-results" id="mobileSearchResults"></section>
+  </div>
+
+  <main class="home-main">
+    <section class="Welcome">
+      <h1>
+        <span class="line1">WELCOME TO THE</span><br>
+        <span class="line2">HOUSE OF MIDORI</span>
+      </h1>
+
+      <p>
+        Discover matcha drinks, snacks, and easy recipes you can make at home.
+      </p>
+
+      <a href="DRINKSnSNACKS.html" class="Welcome-btn">Explore Matcha</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 HOUSE OF MIDORI by Ryza</p>
+  </footer>
+
+  <script>
+    const recipes = [
+      { name: "Matcha Latte", link: "RECIPE.html#matcha-latte" },
+      { name: "Milo Matcha Latte", link: "RECIPE.html#milo-matcha-latte" },
+      { name: "Oreo Matcha Latte", link: "RECIPE.html#oreo-matcha-latte" },
+      { name: "Brownsugar Matcha Latte", link: "RECIPE.html#brownsugar-matcha-latte" },
+      { name: "Dirty Matcha", link: "RECIPE.html#dirty-matcha" },
+      { name: "Strawberry Matcha", link: "RECIPE.html#strawberry-matcha" },
+      { name: "Dutchmill Matcha", link: "RECIPE.html#dutchmill-matcha-combo" },
+      { name: "Seasalt Matcha", link: "RECIPE.html#seasalt-matcha" },
+      { name: "Pink Matcha", link: "RECIPE.html#pink-matcha" },
+      { name: "Mango Matcha", link: "RECIPE.html#mango-matcha" },
+      { name: "Milky Matcha Latte", link: "RECIPE.html#milky-matcha-latte" },
+      { name: "Choco Matcha Latte", link: "RECIPE.html#choco-matcha-latte" },
+      { name: "Matcha Coconut", link: "RECIPE.html#matcha-coconut" },
+      { name: "Matcha Mug Cookie", link: "RECIPE.html#matcha-mug-cookie" },
+      { name: "Matcha Pastillas", link: "RECIPE.html#matcha-pastillas" },
+      { name: "Matcha Truffles", link: "RECIPE.html#matcha-truffles" },
+      { name: "Matcha Cheese Toast", link: "RECIPE.html#matcha-cheese-toast" },
+      { name: "Strawberry Matcha Chocolate", link: "RECIPE.html#strawberry-matcha-chocolate" },
+      { name: "Matcha Ice Candy", link: "RECIPE.html#matcha-ice-candy" }
+    ];
+
+    function setupSearch(inputId, resultsId) {
+      const searchInput = document.getElementById(inputId);
+      const resultsContainer = document.getElementById(resultsId);
+
+      searchInput.addEventListener("keyup", function () {
+        const value = this.value.toLowerCase().trim();
+        resultsContainer.innerHTML = "";
+
+        if (value === "") {
+          resultsContainer.style.display = "none";
+          return;
+        }
+
+        const filtered = recipes.filter(item =>
+          item.name.toLowerCase().includes(value)
+        );
+
+        if (filtered.length === 0) {
+          const noResult = document.createElement("div");
+          noResult.classList.add("result-item", "no-result");
+          noResult.textContent = "No matching recipe found.";
+          resultsContainer.appendChild(noResult);
+        } else {
+          filtered.forEach(item => {
+            const a = document.createElement("a");
+            a.href = item.link;
+            a.textContent = item.name;
+            a.classList.add("result-item");
+            resultsContainer.appendChild(a);
+          });
+        }
+
+        resultsContainer.style.display = "flex";
+      });
+
+      searchInput.addEventListener("focus", function () {
+        if (this.value.trim() !== "" && resultsContainer.innerHTML !== "") {
+          resultsContainer.style.display = "flex";
+        }
+      });
+    }
+
+    setupSearch("homeSearch", "searchResults");
+    setupSearch("mobileHomeSearch", "mobileSearchResults");
+
+    const mobileSearchToggle = document.querySelector(".mobile-search-toggle");
+    const mobileSearchBar = document.querySelector(".mobile-search-bar");
+
+    mobileSearchToggle.addEventListener("click", function () {
+      mobileSearchBar.classList.toggle("active");
+
+      if (mobileSearchBar.classList.contains("active")) {
+        document.getElementById("mobileHomeSearch").focus();
+      }
+    });
+
+    document.addEventListener("click", function (e) {
+      if (!e.target.closest(".navbar-search")) {
+        document.getElementById("searchResults").style.display = "none";
+      }
+
+      if (!e.target.closest(".mobile-search-toggle") && !e.target.closest(".mobile-search-bar")) {
+        mobileSearchBar.classList.remove("active");
+        document.getElementById("mobileSearchResults").style.display = "none";
+      }
+    });
+  </script>
+
+</body>
+</html>

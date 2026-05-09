@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Pacifico&family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>House of Midori</title>
+</head>
+<body class="recipe-page">
+
+  <header class="header">
+    <nav class="navbar has-search">
+
+  <a href="index.html" class="nav-logo">
+    <img src="images/logo2.png" alt="House of Midori Logo">
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="RECIPE.html" class="active">RECIPE</a></li>
+    <li><a href="DRINKSnSNACKS.html">DRINKS & SNACKS</a></li>
+    <li><a href="ABOUT.html">ABOUT</a></li>
+    <li><a href="CONTACT.html">CONTACT</a></li>
+  </ul>
+
+  <section class="navbar-search">
+  <input type="text" id="recipeSearch" placeholder="Search recipes...">
+  <section class="home-search-results" id="recipeSearchResults"></section>
+</section>
+
+</nav>
+  </header>
+
+<div class="mobile-search-toggle">
+  <img src="images/search.png" alt="Search">
+</div>
+
+<div class="mobile-search-bar">
+  <input type="text" id="mobileRecipeSearch" placeholder="Search recipes...">
+  <section class="home-search-results" id="mobileRecipeSearchResults"></section>
+</div>
+
+  <main class="recipe-content">
+
+    <!-- DRINKS -->
+    <section class="recipe-menu-section">
+      <div class="recipe-section-header">
+        <h2>Drinks Recipe</h2>
+      </div>
+
+      <div class="recipe-cards-wrapper drinks-wrapper" id="drinksContainer">
+
+        <article class="recipe-card" data-name="matcha latte drink">
+          <img src="images/d10.webp" alt="Matcha Latte" loading="lazy">
+          <h3>Matcha Latte</h3>
+          <a href="#matcha-latte" class="view-btn">View Recipe</a>
+        </article>
+
+        <article class="recipe-card" data-name="milo matcha latte drink">
+          <img src="images/d11.webp" alt="Milo Matcha Latte" loading="lazy">
+          <h3>Milo Matcha Latte</h3>
+          <a href="#milo-matcha-latte" class="view-btn">View Recipe</a>
+        </article>
+
+        <article class="recipe-card" data-name="oreo matcha latte drink">
+          <img src="images/d2.webp" alt="Oreo Matcha Latte" loading="lazy">
+          <h3>Oreo Matcha Latte</h3>
+          <a href="#oreo-matcha-latte" class="view-btn">View Recipe</a>
+        </article>
+
+        <article class="recipe-card" data-name="brownsugar matcha latte drink">
+          <img src="images/d4.webp" alt="Brownsugar Matcha Latte" loading="lazy">
+          <h3>Brownsugar Matcha Latte</h3>
+          <a href="#brownsugar-matcha-latte" class="view-btn">View Recipe</a>
+        </article>
+
+        <article class="recipe-card" data-name="dirty matcha drink">
+          <img src="images/d5.webp" alt="Dirty Matcha" loading="lazy">
+          <h3>Dirty Matcha</h3>
+          <a href="#dirty-matcha" class="view-btn">View Recipe</a>
+        </article>
+
+        <article class="recipe-card" data-name="strawberry matcha drink">
+          <img src="images/d12.webp" alt="Strawberry Matcha" loading="lazy">
+          <h3>Strawberry Matcha</h3>
+          <a href="#strawberry-matcha" class="view-btn">View Recipe</a>
+        </article>
+
+        <article class="recipe-card" data-name="dutchmill matcha combo drink">
+          <img src="images/d6.webp" alt="Dutchmill and Matcha Combo" loading="lazy">
+          <h3>Dutchmill & Matcha Combo</h3>
+          <a href="#dutchmill-matcha-combo" class="view-btn">View Recipe</a>
+        </article>
+
+        <article class="recipe-card" data-name="extreme strawberry matcha drink">
+          <img src="images/D13.webp" alt="Extreme Strawberry Matcha" loading="lazy">
+          <h3>Extreme Strawberry Matcha</h3>
+          <a href="#extreme-strawberry-matcha" class="view-btn">View Recipe</a>
+        </article>
+
+        <article class="recipe-card" data-name="seasalt matcha drink">
+          <img src="images/d7.webp" alt="Seasalt Matcha" loading="lazy">
+          <h3>Seasalt Matcha</h3>
+          <a href="#seasalt-matcha" class="view-btn">View Recipe</a>
+        </article>
+
+        <article class="recipe-card" data-name="pink matcha drink">
+          <img src="images/d8.webp" alt="Pink Matcha" loading="lazy">
+          <h3>Pink Matcha</h3>
+          <a href="#pink-matcha" class="view-btn">View Recipe</a>
+        </article>
+
+        <article class="recipe-card" data-name="mango matcha drink">
+          <img src="images/d1.webp" alt="Mango Matcha" loading="lazy">
+          <h3>Mango Matcha</h3>
+          <a href="#mango-matcha" class="view-btn">View Recipe</a>
+        </article>
+
+        <article class="recipe-card" data-name="milky matcha latte drink">
+          <img src="images/d9.webp" alt="Milky Matcha Latte" loading="lazy">
+          <h3>Milky Matcha Latte</h3>
+          <a href="#milky-matcha-latte" class="view-btn">View Recipe</a>
+        </article>
+
+        <article class="recipe-card" data-name="choco matcha latte drink">
+          <img src="images/d3.webp" alt="Choco Matcha Latte" loading="lazy">
+          <h3>Choco Matcha Latte</h3>
+          <a href="#choco-matcha-latte" class="view-btn">View Recipe</a>
+        </article>
+
+        <article class="recipe-card" data-name="matcha coconut drink">
+          <img src="images/d14.webp" alt="Matcha Coconut" loading="lazy">
+          <h3>Matcha Coconut</h3>
+          <a href="#matcha-coconut" class="view-btn">View Recipe</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SNACKS -->
+    <section class="recipe-menu-section">
+      <div class="recipe-section-header">
+        <h2>Snacks Recipe</h2>
+      </div>
+
+      <div class="recipe-cards-wrapper snacks-wrapper" id="snacksContainer">
+
+        <article class="recipe-card" data-name="matcha mug cookie snack">
+          <img src="images/FF1.webp" alt="Matcha Mug Cookie" loading="lazy">
+          <h3>Matcha Mug Cookie</h3>
+          <a href="#matcha-mug-cookie" class="view-btn">View Recipe</a>
+        </article>
+
+        <article class="recipe-card" data-name="matcha pastillas snack">
+          <img src="images/FF3.webp" alt="Matcha Pastillas" loading="lazy">
+          <h3>Matcha Pastillas</h3>
+          <a href="#matcha-pastillas" class="view-btn">View Recipe</a>
+        </article>
+
+        <article class="recipe-card" data-name="matcha truffles snack">
+          <img src="images/FF4.webp" alt="Matcha Truffles" loading="lazy">
+          <h3>Soft Matcha Truffles</h3>
+          <a href="#matcha-truffles" class="view-btn">View Recipe</a>
+        </article>
+
+        <article class="recipe-card" data-name="matcha cheese toast snack">
+          <img src="images/FF5.webp" alt="Matcha Cheese Toast" loading="lazy">
+          <h3>Matcha Cheese Toast</h3>
+          <a href="#matcha-cheese-toast" class="view-btn">View Recipe</a>
+        </article>
+
+        <article class="recipe-card" data-name="strawberry coated with matcha chocolate snack">
+          <img src="images/FF6.webp" alt="Strawberry Coated with Matcha Chocolate" loading="lazy">
+          <h3>Strawberry w/ Matcha Dip</h3>
+          <a href="#strawberry-matcha-chocolate" class="view-btn">View Recipe</a>
+        </article>
+
+        <article class="recipe-card" data-name="matcha ice candy snack">
+          <img src="images/FF7.webp" alt="Matcha Ice Candy" loading="lazy">
+          <h3>Matcha Ice Candy</h3>
+          <a href="#matcha-ice-candy" class="view-btn">View Recipe</a>
+        </article>
+      </div>
+      <p id="noResultMessage" class="no-result-message">No matching recipe found.</p>
+    </section>
+
+    <!-- RECIPE DETAILS -->
+    <section class="recipe-details-area">
+
+      <section id="matcha-latte" class="recipe-detail-box">
+        <div class="recipe-detail-top">
+          <a href="#" class="detail-back-btn"><img src="images/back.png" alt="Back"></a>
+          <div>
+            <span class="recipe-detail-tag">Drink Recipe</span>
+            <h2>Classic Matcha Latte</h2>
+          </div>
+        </div>
+        <div class="recipe-detail-layout">
+          <div class="recipe-detail-image">
+            <img src="images/d10.webp" alt="Matcha Latte" loading="lazy">
+          </div>
+          <div class="recipe-detail-text">
+            <p class="recipe-detail-intro">
+              A smooth and creamy matcha latte made with Oatside milk, perfect for everyday matcha cravings.
+            </p>
+            <div class="recipe-info-card ingredients-box">
+              <h3>Ingredients</h3>
+              <ul class="ingredients-grid">
+                <li>200 ml Oatside Milk</li>
+                <li>1 tsp Matcha Powder of LittleRetailPH</li>
+                <li>1–1½ tbsp Condensed Milk</li>
+                <li>Ice cubes</li>
+              </ul>
+            </div>
+            <div class="recipe-info-card procedure-box">
+              <h3>Procedure</h3>
+              <ol>
+                <li>Pour Oatside milk into a glass.</li>
+                <li>In a separate cup, dissolve matcha powder with a small amount of water.</li>
+                <li>Whisk until smooth.</li>
+                <li>Add condensed milk and mix well.</li>
+                <li>Add ice into the milk.</li>
+                <li>Pour the matcha mixture on top.</li>
+                <li>Serve and enjoy.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="milo-matcha-latte" class="recipe-detail-box">
+        <div class="recipe-detail-top">
+          <a href="#" class="detail-back-btn"><img src="images/back.png" alt="Back"></a>
+          <div>
+            <span class="recipe-detail-tag">Drink Recipe</span>
+            <h2>Milo Matcha Latte</h2>
+          </div>
+        </div>
+        <div class="recipe-detail-layout">
+          <div class="recipe-detail-image">
+            <img src="images/d11.webp" alt="Milo Matcha Latte" loading="lazy">
+          </div>
+          <div class="recipe-detail-text">
+            <p class="recipe-detail-intro">
+              A sweet and creamy matcha drink with Milo that gives a fun chocolatey twist.
+            </p>
+            <div class="recipe-info-card ingredients-box">
+              <h3>Ingredients</h3>
+              <ul class="ingredients-grid">
+                <li>1 sachet Milo</li>
+                <li>200 ml Oatside Milk</li>
+                <li>1 tsp Matcha Powder of LittleRetailPH</li>
+                <li>1–1½ tbsp Condensed Milk</li>
+                <li>Ice cubes</li>
+              </ul>
+            </div>
+            <div class="recipe-info-card procedure-box">
+              <h3>Procedure</h3>
+              <ol>
+                <li>Mix Milo with Oatside milk in a glass.</li>
+                <li>In a separate cup, dissolve matcha powder with water.</li>
+                <li>Whisk until smooth.</li>
+                <li>Add condensed milk and mix well.</li>
+                <li>Add ice into the Milo milk.</li>
+                <li>Pour the matcha mixture on top.</li>
+                <li>Serve chilled.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="oreo-matcha-latte" class="recipe-detail-box">
+        <div class="recipe-detail-top">
+          <a href="#" class="detail-back-btn"><img src="images/back.png" alt="Back"></a>
+          <div>
+            <span class="recipe-detail-tag">Drink Recipe</span>
+            <h2>Oreo Matcha Latte</h2>
+          </div>
+        </div>
+        <div class="recipe-detail-layout">
+          <div class="recipe-detail-image">
+            <img src="images/d2.webp" alt="Oreo Matcha Latte" loading="lazy">
+          </div>
+          <div class="recipe-detail-text">
+            <p class="recipe-detail-intro">
+              A creamy matcha drink with Oreo bits that adds a sweet and fun texture.
+            </p>
+            <div class="recipe-info-card ingredients-box">
+              <h3>Ingredients</h3>
+              <ul class="ingredients-grid">
+                <li>2 pcs Oreo Cookies</li>
+                <li>200 ml Oatside Milk</li>
+                <li>1 tsp Matcha Powder of LittleRetailPH</li>
+                <li>1 tbsp Condensed Milk</li>
+                <li>Ice cubes</li>
+              </ul>
+            </div>
+            <div class="recipe-info-card procedure-box">
+              <h3>Procedure</h3>
+              <ol>
+                <li>Crush Oreo cookies into small pieces.</li>
+                <li>Add condensed milk and mix.</li>
+                <li>Pour Oatside milk into the mixture.</li>
+                <li>Add ice.</li>
+                <li>Prepare matcha separately.</li>
+                <li>Pour matcha on top.</li>
+                <li>Add crushed Oreo as topping.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="brownsugar-matcha-latte" class="recipe-detail-box">
+        <div class="recipe-detail-top">
+          <a href="#" class="detail-back-btn"><img src="images/back.png" alt="Back"></a>
+          <div>
+            <span class="recipe-detail-tag">Drink Recipe</span>
+            <h2>Brown Sugar Matcha</h2>
+          </div>
+        </div>
+        <div class="recipe-detail-layout">
+          <div class="recipe-detail-image">
+            <img src="images/d4.webp" alt="Brownsugar Matcha Latte" loading="lazy">
+          </div>
+          <div class="recipe-detail-text">
+            <p class="recipe-detail-intro">
+              A soft and creamy matcha drink with sweet brown sugar syrup and beautiful layers.
+            </p>
+            <div class="recipe-info-card ingredients-box">
+              <h3>Ingredients</h3>
+              <ul class="ingredients-grid">
+                <li>2 tbsp Brown Sugar</li>
+                <li>200 ml Oatside Milk</li>
+                <li>1 tsp Matcha Powder of LittleRetailPH</li>
+                <li>1 tbsp Condensed Milk</li>
+                <li>Ice cubes</li>
+              </ul>
+            </div>
+            <div class="recipe-info-card procedure-box">
+              <h3>Procedure</h3>
+              <ol>
+                <li>Mix sugar with a small amount of water.</li>
+                <li>Microwave for 30 seconds until it becomes syrup.</li>
+                <li>Pour syrup into a glass.</li>
+                <li>Add Oatside milk.</li>
+                <li>Prepare matcha separately and mix with condensed milk.</li>
+                <li>Add ice.</li>
+                <li>Pour matcha mixture on top.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="dirty-matcha" class="recipe-detail-box">
+        <div class="recipe-detail-top">
+          <a href="#" class="detail-back-btn"><img src="images/back.png" alt="Back"></a>
+          <div>
+            <span class="recipe-detail-tag">Drink Recipe</span>
+            <h2>Dirty Matcha</h2>
+          </div>
+        </div>
+        <div class="recipe-detail-layout">
+          <div class="recipe-detail-image">
+            <img src="images/d5.webp" alt="Dirty Matcha" loading="lazy">
+          </div>
+          <div class="recipe-detail-text">
+            <p class="recipe-detail-intro">
+              A bold matcha drink topped with foamy coffee for a unique café-style twist.
+            </p>
+            <div class="recipe-info-card ingredients-box">
+              <h3>Ingredients</h3>
+              <ul class="ingredients-grid">
+                <li>1 tsp Instant Coffee</li>
+                <li>200 ml Oatside Milk</li>
+                <li>1 tsp Matcha Powder of LittleRetailPH</li>
+                <li>2 tbsp Condensed Milk</li>
+                <li>Ice cubes</li>
+              </ul>
+            </div>
+            <div class="recipe-info-card procedure-box">
+              <h3>Procedure</h3>
+              <ol>
+                <li>Pour Oatside milk into a glass.</li>
+                <li>Prepare matcha in a separate cup and mix with condensed milk.</li>
+                <li>Add ice into the milk.</li>
+                <li>Pour the matcha mixture on top.</li>
+                <li>Dissolve coffee with a small amount of water.</li>
+                <li>Froth until slightly foamy.</li>
+                <li>Pour the coffee foam on top.</li>
+                <li>Serve immediately.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="strawberry-matcha" class="recipe-detail-box">
+        <div class="recipe-detail-top">
+          <a href="#" class="detail-back-btn"><img src="images/back.png" alt="Back"></a>
+          <div>
+            <span class="recipe-detail-tag">Drink Recipe</span>
+            <h2>Strawberry Matcha Latte</h2>
+          </div>
+        </div>
+        <div class="recipe-detail-layout">
+          <div class="recipe-detail-image">
+            <img src="images/d12.webp" alt="Strawberry Matcha" loading="lazy">
+          </div>
+          <div class="recipe-detail-text">
+            <p class="recipe-detail-intro">
+              A fresh and fruity matcha drink with real strawberries and a pretty layered look.
+            </p>
+            <div class="recipe-info-card ingredients-box">
+              <h3>Ingredients</h3>
+              <ul class="ingredients-grid">
+                <li>8 pcs Fresh Strawberries</li>
+                <li>200 ml Oatside Milk</li>
+                <li>1 tsp Matcha Powder of LittleRetailPH</li>
+                <li>1 tbsp Condensed Milk</li>
+                <li>Ice cubes</li>
+              </ul>
+            </div>
+            <div class="recipe-info-card procedure-box">
+              <h3>Procedure</h3>
+              <ol>
+                <li>Mash strawberries until soft.</li>
+                <li>Add condensed milk and mix well.</li>
+                <li>Pour Oatside milk into the mixture.</li>
+                <li>Add ice.</li>
+                <li>Prepare matcha in a separate cup and mix with condensed milk.</li>
+                <li>Pour matcha mixture on top.</li>
+                <li>Add extra strawberry as topping if desired.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="dutchmill-matcha-combo" class="recipe-detail-box">
+        <div class="recipe-detail-top">
+          <a href="#" class="detail-back-btn"><img src="images/back.png" alt="Back"></a>
+          <div>
+            <span class="recipe-detail-tag">Drink Recipe</span>
+            <h2>Dutch Mill Matcha</h2>
+          </div>
+        </div>
+        <div class="recipe-detail-layout">
+          <div class="recipe-detail-image">
+            <img src="images/d6.webp" alt="Dutchmill and Matcha Combo" loading="lazy">
+          </div>
+          <div class="recipe-detail-text">
+            <p class="recipe-detail-intro">
+              A creamy matcha combo with Dutch Mill that gives a sweet yogurt-like flavor.
+            </p>
+            <div class="recipe-info-card ingredients-box">
+              <h3>Ingredients</h3>
+              <ul class="ingredients-grid">
+                <li>90 ml Dutch Mill (Blueberry)</li>
+                <li>200 ml Oatside Milk</li>
+                <li>1 tsp Matcha Powder of LittleRetailPH</li>
+                <li>1 tbsp Condensed Milk</li>
+                <li>Ice cubes</li>
+              </ul>
+            </div>
+            <div class="recipe-info-card procedure-box">
+              <h3>Procedure</h3>
+              <ol>
+                <li>Mix Dutch Mill and Oatside milk.</li>
+                <li>Add ice.</li>
+                <li>Prepare matcha separately.</li>
+                <li>Add condensed milk and mix.</li>
+                <li>Pour matcha on top.</li>
+                <li>Serve immediately.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="extreme-strawberry-matcha" class="recipe-detail-box">
+        <div class="recipe-detail-top">
+          <a href="#" class="detail-back-btn"><img src="images/back.png" alt="Back"></a>
+          <div>
+            <span class="recipe-detail-tag">Drink Recipe</span>
+            <h2>Extreme Strawberry Matcha</h2>
+          </div>
+        </div>
+        <div class="recipe-detail-layout">
+          <div class="recipe-detail-image">
+            <img src="images/D13.webp" alt="Extreme Strawberry Matcha" loading="lazy">
+          </div>
+          <div class="recipe-detail-text">
+            <p class="recipe-detail-intro">
+              A sweeter and fruitier strawberry matcha made with fresh strawberries and strawberry drink.
+            </p>
+            <div class="recipe-info-card ingredients-box">
+              <h3>Ingredients</h3>
+              <ul class="ingredients-grid">
+                <li>8 pcs Fresh Strawberries</li>
+                <li>200 ml Selecta Strawberry Drink</li>
+                <li>200 ml Oatside Milk</li>
+                <li>1 tsp Matcha Powder of LittleRetailPH</li>
+                <li>1 tbsp Condensed Milk</li>
+                <li>Ice cubes</li>
+              </ul>
+            </div>
+            <div class="recipe-info-card procedure-box">
+              <h3>Procedure</h3>
+              <ol>
+                <li>Mash strawberries and mix with condensed milk.</li>
+                <li>Pour strawberry drink into the mixture.</li>
+                <li>Add Oatside milk and ice.</li>
+                <li>Prepare matcha separately.</li>
+                <li>Pour matcha on top.</li>
+                <li>Add strawberry topping if desired.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="seasalt-matcha" class="recipe-detail-box">
+        <div class="recipe-detail-top">
+          <a href="#" class="detail-back-btn"><img src="images/back.png" alt="Back"></a>
+          <div>
+            <span class="recipe-detail-tag">Drink Recipe</span>
+            <h2>Seasalt Matcha</h2>
+          </div>
+        </div>
+        <div class="recipe-detail-layout">
+          <div class="recipe-detail-image">
+            <img src="images/d7.webp" alt="Seasalt Matcha" loading="lazy">
+          </div>
+          <div class="recipe-detail-text">
+            <p class="recipe-detail-intro">
+              A creamy iced matcha drink topped with a soft seasalt cream layer for a rich and balanced taste.
+            </p>
+            <div class="recipe-info-card ingredients-box">
+              <h3>Ingredients</h3>
+              <ul class="ingredients-grid">
+                <li>200 ml Oatside Milk</li>
+                <li>1 tsp Matcha Powder of LittleRetailPH</li>
+                <li>1 tbsp Condensed Milk</li>
+                <li>2 tbsp All-Purpose Cream</li>
+                <li>Pinch of Salt</li>
+                <li>½ tsp Sugar</li>
+                <li>Ice cubes</li>
+              </ul>
+            </div>
+            <div class="recipe-info-card procedure-box">
+              <h3>Procedure</h3>
+              <ol>
+                <li>Mix cream, salt, and sugar until foamy.</li>
+                <li>Prepare matcha separately.</li>
+                <li>Add Oatside milk and ice into a glass.</li>
+                <li>Pour matcha mixture on top.</li>
+                <li>Add the cream mixture as topping.</li>
+                <li>Serve immediately.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pink-matcha" class="recipe-detail-box">
+        <div class="recipe-detail-top">
+          <a href="#" class="detail-back-btn"><img src="images/back.png" alt="Back"></a>
+          <div>
+            <span class="recipe-detail-tag">Drink Recipe</span>
+            <h2>Pink Matcha Latte</h2>
+          </div>
+        </div>
+        <div class="recipe-detail-layout">
+          <div class="recipe-detail-image">
+            <img src="images/d8.webp" alt="Pink Matcha" loading="lazy">
+          </div>
+          <div class="recipe-detail-text">
+            <p class="recipe-detail-intro">
+              A bright and pretty matcha drink made with strawberry milk and Oatside milk.
+            </p>
+            <div class="recipe-info-card ingredients-box">
+              <h3>Ingredients</h3>
+              <ul class="ingredients-grid">
+                <li>200 ml Selecta Strawberry Milk Drink</li>
+                <li>100 ml Oatside Milk</li>
+                <li>1 tsp Matcha Powder of LittleRetailPH</li>
+                <li>1 tbsp Condensed Milk</li>
+                <li>Ice cubes</li>
+              </ul>
+            </div>
+            <div class="recipe-info-card procedure-box">
+              <h3>Procedure</h3>
+              <ol>
+                <li>Mix strawberry milk and Oatside milk in a glass.</li>
+                <li>Add ice.</li>
+                <li>Prepare matcha separately.</li>
+                <li>Add condensed milk and mix.</li>
+                <li>Pour matcha on top.</li>
+                <li>Serve chilled.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="mango-matcha" class="recipe-detail-box">
+        <div class="recipe-detail-top">
+          <a href="#" class="detail-back-btn"><img src="images/back.png" alt="Back"></a>
+          <div>
+            <span class="recipe-detail-tag">Drink Recipe</span>
+            <h2>Mango Matcha Latte</h2>
+          </div>
+        </div>
+        <div class="recipe-detail-layout">
+          <div class="recipe-detail-image">
+            <img src="images/d1.webp" alt="Mango Matcha" loading="lazy">
+          </div>
+          <div class="recipe-detail-text">
+            <p class="recipe-detail-intro">
+              A fruity matcha drink with fresh mango, Oatside milk, and a refreshing layered finish.
+            </p>
+            <div class="recipe-info-card ingredients-box">
+              <h3>Ingredients</h3>
+              <ul class="ingredients-grid">
+                <li>½ cup Fresh Mango</li>
+                <li>200 ml Oatside Milk</li>
+                <li>1 tsp Matcha Powder of LittleRetailPH</li>
+                <li>1 tbsp Condensed Milk</li>
+                <li>Ice cubes</li>
+              </ul>
+            </div>
+            <div class="recipe-info-card procedure-box">
+              <h3>Procedure</h3>
+              <ol>
+                <li>Mash mango until smooth.</li>
+                <li>Add condensed milk and mix well.</li>
+                <li>Pour Oatside milk into the mixture.</li>
+                <li>Add ice.</li>
+                <li>Prepare matcha separately.</li>
+                <li>Pour matcha on top.</li>
+                <li>Add mango cubes as topping if desired.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="milky-matcha-latte" class="recipe-detail-box">
+        <div class="recipe-detail-top">
+          <a href="#" class="detail-back-btn"><img src="images/back.webp" alt="Back"></a>
+          <div>
+            <span class="recipe-detail-tag">Drink Recipe</span>
+            <h2>Milky Matcha Latte</h2>
+          </div>
+        </div>
+        <div class="recipe-detail-layout">
+          <div class="recipe-detail-image">
+            <img src="images/d9.webp" alt="Milky Matcha Latte" loading="lazy">
+          </div>
+          <div class="recipe-detail-text">
+            <p class="recipe-detail-intro">
+              A rich and extra creamy matcha drink for milk lovers who want a smoother taste.
+            </p>
+            <div class="recipe-info-card ingredients-box">
+              <h3>Ingredients</h3>
+              <ul class="ingredients-grid">
+                <li>1 sachet Bear Brand Milk Powder</li>
+                <li>250 ml Water</li>
+                <li>1–2 tbsp Condensed Milk</li>
+                <li>1 tsp Matcha Powder of LittleRetailPH</li>
+                <li>Ice cubes</li>
+              </ul>
+            </div>
+            <div class="recipe-info-card procedure-box">
+              <h3>Procedure</h3>
+              <ol>
+                <li>Mix milk powder, water, and condensed milk in a glass.</li>
+                <li>Stir well.</li>
+                <li>Prepare matcha separately.</li>
+                <li>Pour matcha mixture on top.</li>
+                <li>Add extra milk if desired.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="choco-matcha-latte" class="recipe-detail-box">
+        <div class="recipe-detail-top">
+          <a href="#" class="detail-back-btn"><img src="images/back.png" alt="Back"></a>
+          <div>
+            <span class="recipe-detail-tag">Drink Recipe</span>
+            <h2>Choco Matcha Latte</h2>
+          </div>
+        </div>
+        <div class="recipe-detail-layout">
+          <div class="recipe-detail-image">
+            <img src="images/d3.webp" alt="Choco Matcha Latte" loading="lazy">
+          </div>
+          <div class="recipe-detail-text">
+            <p class="recipe-detail-intro">
+              A comforting mix of chocolate and matcha that tastes sweet, creamy, and satisfying.
+            </p>
+            <div class="recipe-info-card ingredients-box">
+              <h3>Ingredients</h3>
+              <ul class="ingredients-grid">
+                <li>200 ml Nutri Boost Chocolate Drink</li>
+                <li>100 ml Oatside Milk</li>
+                <li>1 tsp Matcha Powder of LittleRetailPH</li>
+                <li>1 tbsp Condensed Milk</li>
+                <li>Ice cubes</li>
+              </ul>
+            </div>
+            <div class="recipe-info-card procedure-box">
+              <h3>Procedure</h3>
+              <ol>
+                <li>Pour chocolate drink and Oatside milk into a glass.</li>
+                <li>Prepare matcha separately and mix with condensed milk.</li>
+                <li>Add ice into the drink.</li>
+                <li>Pour matcha mixture on top.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="matcha-coconut" class="recipe-detail-box">
+        <div class="recipe-detail-top">
+          <a href="#" class="detail-back-btn"><img src="images/back.png" alt="Back"></a>
+          <div>
+            <span class="recipe-detail-tag">Drink Recipe</span>
+            <h2>Coconut Matcha</h2>
+          </div>
+        </div>
+        <div class="recipe-detail-layout">
+          <div class="recipe-detail-image">
+            <img src="images/d14.webp" alt="Matcha Coconut" loading="lazy">
+          </div>
+          <div class="recipe-detail-text">
+            <p class="recipe-detail-intro">
+              A refreshing tropical matcha drink with coconut water and a light creamy sweetness.
+            </p>
+            <div class="recipe-info-card ingredients-box">
+              <h3>Ingredients</h3>
+              <ul class="ingredients-grid">
+                <li>200 ml Fresh Coconut Water</li>
+                <li>1 tsp Matcha Powder of LittleRetailPH</li>
+                <li>1 tbsp Condensed Milk</li>
+                <li>Ice cubes</li>
+              </ul>
+            </div>
+            <div class="recipe-info-card procedure-box">
+              <h3>Procedure</h3>
+              <ol>
+                <li>Pour coconut water into a glass.</li>
+                <li>Add ice.</li>
+                <li>Prepare matcha separately.</li>
+                <li>Add condensed milk and mix.</li>
+                <li>Pour matcha on top.</li>
+                <li>Serve fresh.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="matcha-mug-cookie" class="recipe-detail-box">
+        <div class="recipe-detail-top">
+          <a href="#" class="detail-back-btn"><img src="images/back.png" alt="Back"></a>
+          <div>
+            <span class="recipe-detail-tag">Snack Recipe</span>
+            <h2>Matcha Mug Cookie</h2>
+          </div>
+        </div>
+        <div class="recipe-detail-layout">
+          <div class="recipe-detail-image">
+            <img src="images/FF1.webp" alt="Matcha Mug Cookie" loading="lazy">
+          </div>
+          <div class="recipe-detail-text">
+            <p class="recipe-detail-intro">
+              A quick and soft matcha snack that is easy to make in one mug.
+            </p>
+            <div class="recipe-info-card ingredients-box">
+              <h3>Ingredients</h3>
+              <ul class="ingredients-grid">
+                <li>3 tbsp All-purpose Flour</li>
+                <li>2 tbsp Sugar</li>
+                <li>½ tsp Matcha Powder of LittleRetailPH</li>
+                <li>¼ tsp Baking Soda</li>
+                <li>1 tbsp Milk</li>
+                <li>2 tbsp Oil</li>
+                <li>Pinch of Salt</li>
+                <li>Chocolate Chips</li>
+              </ul>
+            </div>
+            <div class="recipe-info-card procedure-box">
+              <h3>Procedure</h3>
+              <ol>
+                <li>In a mug, mix flour, sugar, matcha powder, baking soda, and salt.</li>
+                <li>Add milk and oil, then mix until smooth.</li>
+                <li>Add chocolate chips on top.</li>
+                <li>Microwave for 1 minute and 30 seconds.</li>
+                <li>Let it cool slightly.</li>
+                <li>Serve and enjoy.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="matcha-pastillas" class="recipe-detail-box">
+        <div class="recipe-detail-top">
+          <a href="#" class="detail-back-btn"><img src="images/back.png" alt="Back"></a>
+          <div>
+            <span class="recipe-detail-tag">Snack Recipe</span>
+            <h2>Matcha Pastillas</h2>
+          </div>
+        </div>
+        <div class="recipe-detail-layout">
+          <div class="recipe-detail-image">
+            <img src="images/FF3.webp" alt="Matcha Pastillas">
+          </div>
+          <div class="recipe-detail-text">
+            <p class="recipe-detail-intro">
+              A sweet bite-sized matcha treat that is simple, soft, and easy to prepare.
+            </p>
+            <div class="recipe-info-card ingredients-box">
+              <h3>Ingredients</h3>
+              <ul class="ingredients-grid">
+                <li>4 tbsp Bear Brand Milk Powder</li>
+                <li>2 tbsp Matcha Powder of LittleRetailPH</li>
+                <li>3 tbsp Condensed Milk</li>
+                <li>White Sugar (for coating)</li>
+              </ul>
+            </div>
+            <div class="recipe-info-card procedure-box">
+              <h3>Procedure</h3>
+              <ol>
+                <li>Mix milk powder and matcha powder in a bowl.</li>
+                <li>Add condensed milk and mix until it forms a soft dough.</li>
+                <li>Grease your hands lightly with oil.</li>
+                <li>Scoop and roll the mixture into small balls or logs.</li>
+                <li>Coat each piece with sugar.</li>
+                <li>Refrigerate for at least 3 hours.</li>
+                <li>Serve chilled.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="matcha-truffles" class="recipe-detail-box">
+        <div class="recipe-detail-top">
+          <a href="#" class="detail-back-btn"><img src="images/back.png" alt="Back"></a>
+          <div>
+            <span class="recipe-detail-tag">Snack Recipe</span>
+            <h2>Soft Matcha Truffles</h2>
+          </div>
+        </div>
+        <div class="recipe-detail-layout">
+          <div class="recipe-detail-image">
+            <img src="images/FF4.webp" alt="Matcha Truffles" loading="lazy">
+          </div>
+          <div class="recipe-detail-text">
+            <p class="recipe-detail-intro">
+              A soft and rich matcha dessert with a smooth texture and elegant flavor.
+            </p>
+            <div class="recipe-info-card ingredients-box">
+              <h3>Ingredients</h3>
+              <ul class="ingredients-grid">
+                <li>2 bars Goya White Chocolate</li>
+                <li>2 tbsp Milk</li>
+                <li>1 tsp Matcha Powder of LittleRetailPH</li>
+                <li>1 tbsp Milk Powder</li>
+              </ul>
+            </div>
+            <div class="recipe-info-card procedure-box">
+              <h3>Procedure</h3>
+              <ol>
+                <li>Melt the white chocolate using microwave or double boiler.</li>
+                <li>Add matcha powder and mix well.</li>
+                <li>Add milk and mix until smooth.</li>
+                <li>Pour the mixture into a mold or container.</li>
+                <li>In a separate bowl, mix milk powder and matcha for topping.</li>
+                <li>Sprinkle the topping on the chocolate mixture.</li>
+                <li>Refrigerate for 10–12 hours until firm.</li>
+                <li>Cut or shape and serve chilled.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="matcha-cheese-toast" class="recipe-detail-box">
+        <div class="recipe-detail-top">
+          <a href="#" class="detail-back-btn"><img src="images/back.png" alt="Back"></a>
+          <div>
+            <span class="recipe-detail-tag">Snack Recipe</span>
+            <h2>Matcha Cheese Toast</h2>
+          </div>
+        </div>
+        <div class="recipe-detail-layout">
+          <div class="recipe-detail-image">
+            <img src="images/FF5.webp" alt="Matcha Cheese Toast" loading="lazy">
+          </div>
+          <div class="recipe-detail-text">
+            <p class="recipe-detail-intro">
+              A simple but satisfying snack with cheesy and matcha flavors in one bite.
+            </p>
+            <div class="recipe-info-card ingredients-box">
+              <h3>Ingredients</h3>
+              <ul class="ingredients-grid">
+                <li>2 slices Bread</li>
+                <li>Mozzarella Cheese</li>
+                <li>2 tbsp Butter</li>
+                <li>1 cup All-purpose Flour</li>
+                <li>1 small Egg</li>
+                <li>Splash of Milk</li>
+                <li>½ tsp Matcha Powder of LittleRetailPH</li>
+              </ul>
+            </div>
+            <div class="recipe-info-card procedure-box">
+              <h3>Procedure</h3>
+              <ol>
+                <li>In a bowl, mix butter, flour, egg, milk, and matcha powder until smooth.</li>
+                <li>Slice the bread into 2–4 pieces.</li>
+                <li>Place mozzarella cheese between two slices of bread.</li>
+                <li>Dip or coat the sandwich with the matcha mixture.</li>
+                <li>Microwave for about 1 minute or until cooked.</li>
+                <li>Serve warm and enjoy.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="strawberry-matcha-chocolate" class="recipe-detail-box">
+        <div class="recipe-detail-top">
+          <a href="#" class="detail-back-btn"><img src="images/back.png" alt="Back"></a>
+          <div>
+            <span class="recipe-detail-tag">Snack Recipe</span>
+            <h2>Strawberry w/ Matcha Dip</h2>
+          </div>
+        </div>
+        <div class="recipe-detail-layout">
+          <div class="recipe-detail-image">
+            <img src="images/FF6.webp" alt="Strawberry Coated with Matcha Chocolate" loading="lazy">
+          </div>
+          <div class="recipe-detail-text">
+            <p class="recipe-detail-intro">
+              A sweet strawberry snack coated in creamy matcha chocolate for a pretty and tasty treat.
+            </p>
+            <div class="recipe-info-card ingredients-box">
+              <h3>Ingredients</h3>
+              <ul class="ingredients-grid">
+                <li>Fresh Strawberries</li>
+                <li>1 bar Goya White Chocolate</li>
+                <li>1 tsp Matcha Powder of LittleRetailPH</li>
+              </ul>
+            </div>
+            <div class="recipe-info-card procedure-box">
+              <h3>Procedure</h3>
+              <ol>
+                <li>Melt the white chocolate.</li>
+                <li>Add matcha powder and mix until smooth.</li>
+                <li>Wash strawberries and remove leaves.</li>
+                <li>Dip strawberries into the matcha chocolate.</li>
+                <li>Let it set for a few minutes.</li>
+                <li>Serve immediately or chill before serving.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="matcha-ice-candy" class="recipe-detail-box">
+        <div class="recipe-detail-top">
+          <a href="#" class="detail-back-btn"><img src="images/back.png" alt="Back"></a>
+          <div>
+            <span class="recipe-detail-tag">Snack Recipe</span>
+            <h2>Matcha Ice Candy</h2>
+          </div>
+        </div>
+        <div class="recipe-detail-layout">
+          <div class="recipe-detail-image">
+            <img src="images/FF7.webp" alt="Matcha Ice Candy" loading="lazy">
+          </div>
+          <div class="recipe-detail-text">
+            <p class="recipe-detail-intro">
+              A cold and creamy frozen matcha dessert that is perfect for hot days.
+            </p>
+            <div class="recipe-info-card ingredients-box">
+              <h3>Ingredients</h3>
+              <ul class="ingredients-grid">
+                <li>1 tsp Matcha Powder of LittleRetailPH</li>
+                <li>2 tbsp Hot Water</li>
+                <li>1 cup Milk</li>
+                <li>2–3 tbsp Condensed Milk</li>
+                <li>Ice candy plastic</li>
+                <li>Rubber bands</li>
+              </ul>
+            </div>
+            <div class="recipe-info-card procedure-box">
+              <h3>Procedure</h3>
+              <ol>
+                <li>In a cup, dissolve matcha powder with hot water.</li>
+                <li>Whisk until smooth and no lumps.</li>
+                <li>Add milk and condensed milk, then mix well.</li>
+                <li>Taste and adjust sweetness if needed.</li>
+                <li>Pour the mixture into ice candy plastic using a funnel.</li>
+                <li>Tie each plastic securely with rubber bands.</li>
+                <li>Freeze for at least 6–8 hours or until solid.</li>
+                <li>Serve cold and enjoy.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+  </main>
+
+<script>
+  const recipeSearch = document.getElementById("recipeSearch");
+  const recipeResults = document.getElementById("recipeSearchResults");
+
+  const mobileRecipeSearch = document.getElementById("mobileRecipeSearch");
+  const mobileRecipeSearchResults = document.getElementById("mobileRecipeSearchResults");
+
+  const mobileSearchToggle = document.querySelector(".mobile-search-toggle");
+  const mobileSearchBar = document.querySelector(".mobile-search-bar");
+
+  const recipes = [
+    { name: "Matcha Latte", link: "#matcha-latte" },
+    { name: "Milo Matcha Latte", link: "#milo-matcha-latte" },
+    { name: "Oreo Matcha Latte", link: "#oreo-matcha-latte" },
+    { name: "Brownsugar Matcha Latte", link: "#brownsugar-matcha-latte" },
+    { name: "Dirty Matcha", link: "#dirty-matcha" },
+    { name: "Strawberry Matcha", link: "#strawberry-matcha" },
+    { name: "Dutchmill Matcha Combo", link: "#dutchmill-matcha-combo" },
+    { name: "Extreme Strawberry Matcha", link: "#extreme-strawberry-matcha" },
+    { name: "Seasalt Matcha", link: "#seasalt-matcha" },
+    { name: "Pink Matcha", link: "#pink-matcha" },
+    { name: "Mango Matcha", link: "#mango-matcha" },
+    { name: "Milky Matcha Latte", link: "#milky-matcha-latte" },
+    { name: "Choco Matcha Latte", link: "#choco-matcha-latte" },
+    { name: "Matcha Coconut", link: "#matcha-coconut" },
+    { name: "Matcha Mug Cookie", link: "#matcha-mug-cookie" },
+    { name: "Matcha Pastillas", link: "#matcha-pastillas" },
+    { name: "Matcha Truffles", link: "#matcha-truffles" },
+    { name: "Matcha Cheese Toast", link: "#matcha-cheese-toast" },
+    { name: "Strawberry Matcha Chocolate", link: "#strawberry-matcha-chocolate" },
+    { name: "Matcha Ice Candy", link: "#matcha-ice-candy" }
+  ];
+
+  function setupSearch(input, resultsBox) {
+
+    input.addEventListener("keyup", function () {
+
+      const value = this.value.toLowerCase().trim();
+
+      resultsBox.innerHTML = "";
+
+      if (value === "") {
+        resultsBox.style.display = "none";
+        return;
+      }
+
+      const filtered = recipes.filter(item =>
+        item.name.toLowerCase().includes(value)
+      );
+
+      if (filtered.length === 0) {
+
+        const noResult = document.createElement("div");
+
+        noResult.classList.add("result-item", "no-result");
+
+        noResult.textContent = "No matching recipe found.";
+
+        resultsBox.appendChild(noResult);
+
+      } else {
+
+        filtered.forEach(item => {
+
+          const a = document.createElement("a");
+
+          a.href = item.link;
+
+          a.textContent = item.name;
+
+          a.classList.add("result-item");
+
+          resultsBox.appendChild(a);
+
+        });
+      }
+
+      resultsBox.style.display = "flex";
+    });
+
+    input.addEventListener("focus", function () {
+
+      if (this.value.trim() !== "" && resultsBox.innerHTML !== "") {
+
+        resultsBox.style.display = "flex";
+      }
+    });
+  }
+
+  setupSearch(recipeSearch, recipeResults);
+  setupSearch(mobileRecipeSearch, mobileRecipeSearchResults);
+
+  mobileSearchToggle.addEventListener("click", function () {
+
+    mobileSearchBar.classList.toggle("active");
+
+    if (mobileSearchBar.classList.contains("active")) {
+
+      mobileRecipeSearch.focus();
+    }
+  });
+
+  document.addEventListener("click", function (e) {
+
+    if (!e.target.closest(".navbar-search")) {
+
+      recipeResults.style.display = "none";
+    }
+
+    if (
+      !e.target.closest(".mobile-search-toggle") &&
+      !e.target.closest(".mobile-search-bar")
+    ) {
+
+      mobileSearchBar.classList.remove("active");
+
+      mobileRecipeSearchResults.style.display = "none";
+    }
+  });
+</script>
+
+<footer class="footer">
+    <p>© 2026 HOUSE OF MIDORI by Ryza</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Pacifico&family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>House of Midori</title>
+</head>
+
+<body class="contact">
+
+  <!-- NAVBAR -->
+  <header class="header">
+   <nav class="navbar">
+
+  <a href="index.html" class="nav-logo">
+    <img src="images/logo2.png" alt="House of Midori Logo">
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="RECIPE.html">RECIPE</a></li>
+    <li><a href="DRINKSnSNACKS.html">DRINKS & SNACKS</a></li>
+    <li><a href="ABOUT.html">ABOUT</a></li>
+    <li><a href="CONTACT.html" class="active">CONTACT</a></li>
+  </ul>
+
+</nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="contact-main">
+
+    <div class="contact-section">
+
+      <!-- GALLERY -->
+      <div class="contact-top">
+        <div class="contact-gallery-container">
+          <div class="contact-gallery">
+            <img src="images/g1.webp" loading="lazy">
+            <img src="images/g2.webp" loading="lazy">
+            <img src="images/g3.webp" loading="lazy">
+            <img src="images/g4.webp" loading="lazy">
+            <img src="images/g5.webp" loading="lazy">
+            <img src="images/g6.webp" loading="lazy">
+            <img src="images/g7.webp" loading="lazy">
+            <img src="images/g8.webp" loading="lazy">
+            <img src="images/g9.webp" loading="lazy">
+            <img src="images/g10.webp" loading="lazy">
+            <img src="images/g11.webp" loading="lazy">
+            <img src="images/g12.webp" loading="lazy">
+            <img src="images/g13.webp" loading="lazy">
+            <img src="images/g14.webp" loading="lazy">
+            <img src="images/f1.webp" loading="lazy">
+            <img src="images/f2.webp" loading="lazy">
+            <img src="images/f3.webp" loading="lazy">
+            <img src="images/f4.webp" loading="lazy">
+            <img src="images/f5.webp" loading="lazy">
+            <img src="images/f6.webp" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div class="contact-form-section">
+        <h1>Contact Me</h1>
+
+        <p>
+          Feel free to send a message if you have questions, suggestions, or
+          just want to talk about matcha.
+        </p>
+
+        <form class="contact-form" id="contactForm">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter your name" required>
+
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter your email" required>
+
+          <label>Subject</label>
+          <input type="text" placeholder="Enter subject" required>
+
+          <label>Message</label>
+          <textarea rows="6" placeholder="Write your message here" required></textarea>
+
+          <button type="submit" class="contact-btn">Send Message</button>
+        </form>
+
+        <div class="success-message" id="successMessage">
+          <span class="success-icon">✓</span>
+          <h3>Message Sent Successfully!</h3>
+          <p>Thank you for reaching out. Your message has been recorded.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 HOUSE OF MIDORI by Ryza</p>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    const contactForm = document.getElementById("contactForm");
+    const successMessage = document.getElementById("successMessage");
+
+    contactForm.addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      successMessage.classList.add("show");
+
+      successMessage.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+      });
+
+      contactForm.reset();
+
+      setTimeout(() => {
+        successMessage.classList.remove("show");
+      }, 4000);
+    });
+  </script>
+
+</body>
+</html>
